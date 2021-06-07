@@ -6,9 +6,10 @@
   - [Term Clarification: Substrate, Polkadot/Kusama, Web 3.0, etc](#term-clarification-substrate-polkadotkusama-web-30-etc)
   - [Setup Your Local Development Environment](#setup-your-local-development-environment)
   - [Using Polkadot JS App & Browser Extension](#using-polkadot-js-app--browser-extension)
-    - [Working with Substrate Front-end Template](#working-with-substrate-front-end-template)
   - [Developing on Substrate Runtime](#developing-on-substrate-runtime)
+    - [Know Some Rust](#know-some-rust)
     - [Substrate High Level Architecture](#substrate-high-level-architecture)
+    - [Pallet Development](#pallet-development)
     - [Pallet Storage](#pallet-storage)
     - [Pallet Runtime logic](#pallet-runtime-logic)
     - [Pallet Events & Errors](#pallet-events--errors)
@@ -16,6 +17,7 @@
     - [Configuring Your Substrate Runtime to Use a Pallet](#configuring-your-substrate-runtime-to-use-a-pallet)
     - [Tutorial: Add a Pallet to Your Runtime](#tutorial-add-a-pallet-to-your-runtime)
   - [Polkadot JS API \(Javascript API for building dApp\)](#polkadot-js-api-javascript-api-for-building-dapp)
+    - [Working with Substrate Front-end Template](#working-with-substrate-front-end-template)
   - [Others](#others)
     - [Tutorial: Start a Private Network with Substrate](#tutorial-start-a-private-network-with-substrate)
     - [Off-chain Workers](#off-chain-workers)
@@ -135,12 +137,38 @@ Two keys to note:
   - [Polkadot JS doc: Type basics](https://polkadot.js.org/docs/api/start/types.basics), and
   - [Polkadot JS doc: Extending types](https://polkadot.js.org/docs/api/start/types.extend)
 
-
-### Working with Substrate Front-end Template
+There is also a metamask-like browser extension to manage your Polkadot account, [Polkadot-js Extension](https://polkadot.js.org/extension/).
 
 ## Developing on Substrate Runtime
 
+### Know Some Rust
+
+You will need to know Rust fairly well to understand what's going on in Substrate and to program in Substrate framework.
+
+Refer to [The Rust Book](https://doc.rust-lang.org/book/). You should know the materials from ch01 - ch10. There are also advanced Rust concepts required that are addressed in ch13 - 14, 18. Substrate also leverage a lot on techniques mentioned in ch19.2 - ch19.5.
+
 ### Substrate High Level Architecture
+
+To know more about the high level architecture of Substrate. Please go through the documents on **[Getting Started: Overview](https://substrate.dev/docs/en/)** and **[Getting Started: Architecture](https://substrate.dev/docs/en/knowledgebase/getting-started/architecture)**.
+
+In this document, we assume you will always development Substrate runtime with FRAME and node. This is what a Substrate node consists of.
+
+![assets/03-substrate-architecture.png](./assets/03-substrate-architecture.png)
+
+Each node has many components that manage things like the transaction queue, communicating over a P2P network, reaching consensus on the state of the blockchain, and the chain's actual runtime logic. Each aspect of the node is interesting in its own right, and the runtime is particularly interesting because it contains the business logic (aka "state transition function") that codifies the chain's functionality. The runtime contains a collection of pallets that are configured to work together.
+
+And we will always stick to FRAME v2 syntax in this document.
+
+On the node level, we leverage on [libp2p](#) for the p2p networking layer and put the transaction pool, consensus mechanism, and underlying data storage (a key-value database) on the node level. But note that these components are relatively advanced and we will only need to know their existence but not dwell into them.
+
+### Pallet Development
+
+Go through the following documents to know the fundamentals of runtime development.
+
+- [Runtime: Overview]()
+- [Runtime: Primitives]()
+- [Runtime: FRAME]()
+- [Runtime: Pallets]()
 
 ### Pallet Storage
 
@@ -157,6 +185,8 @@ Two keys to note:
 ### Tutorial: Add a Pallet to Your Runtime
 
 ## Polkadot JS API (Javascript API for building dApp)
+
+### Working with Substrate Front-end Template
 
 ## Others
 
