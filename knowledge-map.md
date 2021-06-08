@@ -3,7 +3,7 @@
 - [Substrate Knowledge Map for Hackathon Participants](#substrate-knowledge-map-for-hackathon-participants)
   - [Why Substrate? \(Substrate Blockchain vs Smart Contract\)](#why-substrate-substrate-blockchain-vs-smart-contract)
   - [Navigating Our Documentations](#navigating-our-documentations)
-  - [Term Clarification](#term-clarification)
+  - [Terms Clarification](#terms-clarification)
   - [Setup Your Local Development Environment](#setup-your-local-development-environment)
   - [Using Polkadot JS App & Browser Extension](#using-polkadot-js-app--browser-extension)
   - [Substrate Runtime Development](#substrate-runtime-development)
@@ -19,10 +19,9 @@
 
 <!-- /MarkdownTOC -->
 
-
 # Substrate Knowledge Map for Hackathon Participants
 
-The following is an overview of knowledge map what a hackathon participant need to know in order to develop a non-trivial application for hackathon submission. There is a high level description on each knowledge domain and point to corresponding documentation site so you can dig deeper in that subject. Tutorials will be introduced in the middle as they serve as a good break from reading and actually get your hand dirty and consolidate what you have just learned.
+The following is an overview of knowledge map what a hackathon participant need to know in order to develop a non-trivial application for hackathon submission. There is a high level description on each knowledge domain and point to corresponding documentation site so you can dig deeper in that subject. Tutorials will be introduced in the middle to serve as a good break from reading and actually get your hand dirty and consolidate what you have learned.
 
 ## Why Substrate? (Substrate Blockchain vs Smart Contract)
 
@@ -86,7 +85,7 @@ If you need any community support, please join the [Substrate Technical matrix c
 
 **[Polkadot JS API doc](#)**, documents on how to use Polkadot-JS API javascript API, for developers to build dApp to communicate with Substrate-based blockchain.
 
-## Term Clarification
+## Terms Clarification
 
 - **Substrate**: the framework built for writing highly customized blockchain
 - **Polkadot**: Polkadot is the mainnet that built on top of Substrate
@@ -116,7 +115,6 @@ Two keys to note:
 ![assets/01-polkadot-app-endpoint.png](./assets/01-polkadot-app-top-left.png)
 
 ![assets/02-polkadot-app-select-endpoint.png](./assets/02-polkadot-app-select-endpoint.png)
-
 
 2. If connecting to a custom chain (or your locally-running node), you may need to specify the custom type in JSON under *Settings* > *Developer*.
 
@@ -205,6 +203,7 @@ In Substrate, you can program smart contract in either ink! for EVM (solidity la
 
 - Learn about using the [EVM pallet](http://localhost:3000/docs/en/knowledgebase/smart-contracts/evm-pallet).
 - [Tutorial: Substrate Frontier - Configure Substrate to run EVM and accepting Solidity Contracts](https://substrate.dev/frontier-workshop)
+- [Reference documentation for Solidity](https://docs.soliditylang.org)
 
 ## Advanced Domains in Substrate
 
@@ -221,3 +220,12 @@ In Substrate, you can program smart contract in either ink! for EVM (solidity la
 ## What We Do Not Cover
 
 A lot :)
+
+- About [Transaction Weight](https://substrate.dev/docs/en/knowledgebase/learn-substrate/weight) and [Fee](https://substrate.dev/docs/en/knowledgebase/runtime/fees)
+- [Using benchmarking to determine the transaction cost](https://substrate.dev/docs/en/knowledgebase/runtime/benchmarking)
+- About [Session keys](https://substrate.dev/docs/en/knowledgebase/learn-substrate/session-keys)
+- Learn more about [using pallet macro](https://substrate.dev/docs/en/knowledgebase/runtime/macros), and [the api doc](https://substrate.dev/rustdocs/v3.0.0/frame_support/attr.pallet.html).
+- [Writing test for pallet functions](https://substrate.dev/docs/en/knowledgebase/runtime/tests).
+- [Tightly- and Loosely-coupled pallets](https://substrate.dev/recipes/pallet-coupling.html), calling other pallet functions from one pallet via trait specification.
+- [Blockchain Consensus Mechansim](https://wiki.polkadot.network/docs/en/learn-consensus), and a recipe on  customizing it to proof-of-work [here](https://substrate.dev/recipes/basic-pow.html).
+- [Detail steps on account generation](https://wiki.polkadot.network/docs/en/learn-account-generation)
