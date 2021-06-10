@@ -14,7 +14,6 @@
   - [Smart Contract](#smart-contract)
     - [Using **ink!**](#using-ink)
     - [Using **EVM / Solidity**](#using-evm--solidity)
-  - [Advanced Domains in Substrate](#advanced-domains-in-substrate)
   - [What We Do Not Cover](#what-we-do-not-cover)
 
 <!-- /MarkdownTOC -->
@@ -171,11 +170,10 @@ Please go through the following documents to know the fundamentals of runtime de
 
 - [Tutorial: Start a Private Network with Substrate](https://substrate.dev/docs/en/tutorials/start-a-private-network/). This tutorial helps you run a blockchain network with out-of-the-box Substrate node.
 
-- Off-chain Features
+- [Off-chain Features](https://substrate.dev/docs/en/knowledgebase/learn-substrate/off-chain-features)
 
   There are certain limits on on-chain logic. They include that the computation cannot be too intensive that it affect the block output time, and the computation must be deterministic. This means that computation rely on external data fetching cannot be done on-chain. In Substrate, developers can also run computation off-chain and have the result send back on-chain via extrinsics. The following articles cover them.
 
-  - [Key Concept: Off-Chain Features](https://substrate.dev/docs/en/knowledgebase/learn-substrate/off-chain-features)
   - [Recipes: Submit signed and unsigned transactions from off-chain workers back on-chain](https://substrate.dev/recipes/off-chain-workers/transactions.html)
   - [Recipes: Fetch external data using HTTP requests and parse JSON responses](https://substrate.dev/recipes/off-chain-workers/http-json.html)
   - [Recipes: Store result in off-chain worker local storage](https://substrate.dev/recipes/off-chain-workers/storage.html)
@@ -205,27 +203,20 @@ In Substrate, you can program smart contract in either ink! for EVM (solidity la
 - [Tutorial: Substrate Frontier - Configure Substrate to run EVM and accepting Solidity Contracts](https://substrate.dev/frontier-workshop)
 - [Reference documentation for Solidity](https://docs.soliditylang.org)
 
-## Advanced Domains in Substrate
-
-- A tutorial on [On-chain(forkless) Runtime Upgrade](https://substrate.dev/docs/en/tutorials/forkless-upgrade/). This demo introduces how to perform runtime upgrade and scheduled runtime upgrade as a chain transaction.
-
-- One key feature of Polkadot is the capability of becoming a parachain. You can develop your own application-specific logic in your chain and rely on the validator community of the relay-chain to secure your network (instead of building another validator community yourself). Learn more about:
-
-- [Parachains](https://wiki.polkadot.network/docs/en/learn-parachains)
-- [Cross-chain Message Passing (XCMP)](https://wiki.polkadot.network/docs/en/learn-crosschain), how parachain and relay-chain communicate to each others
-- [Workshop: Using cumulus to build your parachain](https://substrate.dev/cumulus-workshop)
-
----
-
 ## What We Do Not Cover
 
 A lot :)
 
+- On-chain runtime upgrade. We have a tutorial on [On-chain(forkless) Runtime Upgrade](https://substrate.dev/docs/en/tutorials/forkless-upgrade/). This demo introduces how to perform runtime upgrade and scheduled runtime upgrade as a chain transaction.
 - About [Transaction Weight](https://substrate.dev/docs/en/knowledgebase/learn-substrate/weight) and [Fee](https://substrate.dev/docs/en/knowledgebase/runtime/fees)
-- [Using benchmarking to determine the transaction cost](https://substrate.dev/docs/en/knowledgebase/runtime/benchmarking)
+- [Benchmarking your runtime to determine the transaction cost](https://substrate.dev/docs/en/knowledgebase/runtime/benchmarking)
 - About [Session keys](https://substrate.dev/docs/en/knowledgebase/learn-substrate/session-keys)
 - Learn more about [using pallet macro](https://substrate.dev/docs/en/knowledgebase/runtime/macros), and [the api doc](https://substrate.dev/rustdocs/v3.0.0/frame_support/attr.pallet.html).
 - [Writing test for pallet functions](https://substrate.dev/docs/en/knowledgebase/runtime/tests).
 - [Tightly- and Loosely-coupled pallets](https://substrate.dev/recipes/pallet-coupling.html), calling other pallet functions from one pallet via trait specification.
 - [Blockchain Consensus Mechansim](https://wiki.polkadot.network/docs/en/learn-consensus), and a recipe on  customizing it to proof-of-work [here](https://substrate.dev/recipes/basic-pow.html).
 - [Detail steps on account generation](https://wiki.polkadot.network/docs/en/learn-account-generation)
+- **[Parachains](https://wiki.polkadot.network/docs/en/learn-parachains)**: one key feature of Polkadot is the capability of becoming a parachain. You can develop your own application-specific logic in your chain and rely on the validator community of the relay-chain to secure your network, instead of building another validator community yourself. Learn more about:
+
+  - [Cross-chain Message Passing (XCMP)](https://wiki.polkadot.network/docs/en/learn-crosschain), how parachain and relay-chain communicate to each others
+  - [Workshop: Using cumulus to build your parachain](https://substrate.dev/cumulus-workshop)
