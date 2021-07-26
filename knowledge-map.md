@@ -220,8 +220,6 @@ In Substrate, you can program smart contract in ink!.
 - Learn about [smart contract development in Substrate](https://substrate.dev/docs/en/knowledgebase/smart-contracts/)
 - Learn about [Smart contract development using ink!](https://substrate.dev/docs/en/knowledgebase/smart-contracts/contracts-pallet)
 
-👉 **Complete [Tutorial: ink! Smart Contracts Tutorial](labs/08-smart-contract-ink.md)**
-
 ## What We Do Not Cover
 
 A lot 😄
