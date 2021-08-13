@@ -23,7 +23,7 @@ This quiz covers the following parts of the Substrate Knowledge Map:
 - [ ] C. Linux
 - [ ] D. Android
 
-### 3. Why do we need both rust stable and rust nightly version installed to compile Substrate?
+### 3. Why do we need both the rust stable and rust nightly versions installed to compile Substrate?
 
 - [ ] A. We want to make sure our binaries support the upcoming features in rust nightly version.
 - [ ] B. To test our compiled binaries support features in both rust stable and rust nightly.
@@ -48,8 +48,8 @@ This quiz covers the following parts of the Substrate Knowledge Map:
 
 ### 6. If you added custom data type in Substrate runtime, what do you need to do on Polkadot-JS Apps side to for the Apps to support this Substrate network?
 
-- [ ] In **Setting** > **Metadata** tab, add the custom data definition in JSON form.
-- [ ] In **Setting** > **Developer** tab, add the custom data definition in XML form.
-- [ ] In **Setting** > **Developer** tab, add the custom data definition in JSON form.
-- [ ] In **Toolbox** > **Sign message** tab, sign a message with the sudo user account for confirmation.
-- [ ] In **Toolbox** > **Verify signature** tab, verify the signature coming from a sudo user account for confirmation.
+- [ ] In the **Settings** > **Metadata** tab, add the custom data definition in JSON form.
+- [ ] In the **Settings** > **Developer** tab, add the custom data definition in XML form.
+- [ ] In the **Settings** > **Developer** tab, add the custom data definition in JSON form.
+- [ ] In the **Toolbox** > **Sign message** tab, sign a message with the sudo user account for confirmation.
+- [ ] In the **Toolbox** > **Verify signature** tab, verify the signature coming from a sudo user account for confirmation.

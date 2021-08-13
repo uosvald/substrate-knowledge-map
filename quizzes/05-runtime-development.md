@@ -29,10 +29,10 @@ This quiz covers the following parts of the Substrate Knowledge Map:
 
 ### 4. In Substrate runtime development, why are "weights" important?
 
-- [ ] A. To keep the blockchains validators and treasury prosperous: they make sure that enough fees are collected over time.
+- [ ] A. They make sure that enough fees are collected over time to keep the blockchains' validators and treasury prosperous.
 - [ ] B. They're not that important: removing them makes little difference in the grand scheme of things.
-- [ ] C. They provide a measure of execution time for dipatchables: this is crucial to ensure calls to the runtime won't surpass blocktime and for calculating fees associated with a dispatchable.
-- [ ] D. They provide a measure to derive appropriate block execution time to dynamicaly define the time it takes to finalize a block.
+- [ ] C. They provide a measure of execution time for dipatchables, which is crucial to ensure that calls to the runtime won't surpass blocktime and to calculate fees associated with a dispatchable.
+- [ ] D. They provide a measure that helps derive appropriate block execution time in order to dynamicaly define the time it should take to finalize a block.
 
 ### 5. I want to use a pallet in my runtime ... Check all that apply.
 

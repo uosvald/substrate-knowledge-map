@@ -2,7 +2,7 @@
 
 ## Task
 
-Complete [Tutorial: Build a PoE Decentralized Application](https://substrate.dev/docs/en/tutorials/build-a-dapp/), a good tutorial of hand-on building a dApp using Substrate from end-to-end, and building a simple front-end to interact with it.
+Complete the [Build a PoE Decentralized Application](https://substrate.dev/docs/en/tutorials/build-a-dapp/) tutorial, a good tutorial showcasing end-to-end hands-on dApp development in Substrate, where you'll also learn how to build a simple front-end and interact with it.
 
 ## Submission Instructions
 

@@ -16,12 +16,12 @@ This quiz covers the following parts of the Substrate Knowledge Map:
 
 ### 2. In Substrate, Rust macros are useful because ...
 
-- [ ] A. Macros are a useful way to avoid code repetition.
-- [ ] B. Macros enables developers to write domain specific languages.
+- [ ] A. Macros are a way to avoid code repetition.
+- [ ] B. Macros enable developers to write domain specific languages.
 - [ ] C. Macros allow metaprogramming.
 - [ ] D. All of the above.
 
-### 3. Which of these is correct syntax for structs in Rust? Check all that apply
+### 3. Which of these is correct syntax for a struct in Rust? Check all that apply.
 
 - [ ] A.
 
@@ -59,18 +59,17 @@ This quiz covers the following parts of the Substrate Knowledge Map:
   }
   ```
 
-### 4. What is true about unit testing in Rust?
+### 4. What is true about unit testing in Rust? Check all that apply.
 
 - [ ] A. `assert!(expression)` and `assert_eq!(left, right)` are useful helper macros to evaluate expressions.
 - [ ] B. Tests can be run using `cargo run test`.
-- [ ] C. Most unit tests go into a tests `mod` with the `#[cfg(test)]` attribute.
-- [ ] D. Only A and C.
-- [ ] E. All of the above
+- [ ] C. Unit tests are more complex in Rust than in any other language.
+- [ ] D.  Most unit tests go into a tests `mod` with the `#[cfg(test)]` attribute.
 
 ### 5. "Pallets" in FRAME are really just \_ .
 
 - [ ] A. Modules denoted `mod` as Rust understands them.
 - [ ] B. Powered by a collection of macros that use Substrate's core libraries for developers to easily access.
 - [ ] C. A modular way to split up runtime logic, so they can be composed for different uses.
-- [ ] D. They have to fulfill a certain structure to have the storage and the pallet runtime logic defined.
+- [ ] D. Modules that have to fulfill a certain structure to be used in a Substrate chain's runtime logic.
 - [ ] E. All of the above.
