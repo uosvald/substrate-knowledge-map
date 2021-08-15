@@ -14,8 +14,8 @@
     - [Lab #3](#lab-3)
   - [Preliminaries](#preliminaries)
     - [Rust](#rust)
-    - [Quiz #3](#quiz-3)
     - [How Blockchain Works](#how-blockchain-works)
+    - [Quiz #3](#quiz-3)
   - [Substrate Runtime Development](#substrate-runtime-development)
     - [High Level Architecture](#high-level-architecture)
     - [Quiz #4](#quiz-4)
@@ -37,15 +37,12 @@
 
 # Substrate Knowledge Map for Hackathon Participants
 
-The following is a knowledge covering what a hackathon participant needs to know in order to
+The following is a knowledge covering what Substrate hackathon participants needs to know in order to
 develop a non-trivial application for a hackathon submission. 
 
-The map covers 6 main sections: **Introduction, Basics, Preliminaries, Runtime Development,Polkadot JS API and Smart Contracts.** Each section
+The map covers 6 main sections: **Introduction, Basics, Preliminaries, Runtime Development,Polkadot JS API and Smart Contracts.** Each section contains basic information and links to corresponding documentation for you to dig deeper in each topic. 
 
-There is a high level description on
-each domain and point to the corresponding documentation so you can dig deeper in that subject.
-Tutorials will be introduced in the middle to serve as a good break from reading and actually get
-your hand dirty and consolidate what you have learned.
+Within each section, you will find a mix of quizzes and labs to test your knowledge as your progress through the map. In this way, this knowledge map is designed to help you consolidate what you've learnt and put it to practice with some hands-on activities.
 
 ## Introduction
 
