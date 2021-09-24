@@ -78,7 +78,13 @@ We have a few documentation sites. A key in learning Substrate is knowing how to
 
 All of these we features on using [Substrate Node Template](#), the minimal Substrate blockchain node, and [Substrate Front-end template](#), a front-end built with React that connect to Substrate. Developers are encouraged to start new Substrate project based on these templates.
 
-If you need any community support, please join the [Substrate Technical matrix channel](https://app.element.io/#/room/!HzySYSaIhtyWrwiwEV:matrix.org).
+If you need any community support, please join the following channels based on the area where you need help:
+- Substrate Technical channel on [Discord](https://discord.gg/JDqXTre5HB) or [Element](https://app.element.io/#/room/!HzySYSaIhtyWrwiwEV:matrix.org). 
+- ink! Smart Contract channel on [Discord](https://discord.gg/EDxn9hN6mM) or [Element](https://matrix.to/#/#ink:matrix.parity.org)
+- Frontier EVM Compatibility channel on [Discord](https://matrix.to/#/#frontier:matrix.parity.org) or [Element](https://matrix.to/#/#frontier:matrix.parity.org)
+- PolkatodJS API channel on [Discord](https://discord.gg/R9HGGWtvCS)
+
+Alternatively, also look for support on [Stackoverflow where questions are tagged with "substrate"](https://stackoverflow.com/questions/tagged/substrate) or on the [Parity Subport repo](https://github.com/paritytech/subport/issues). 
 
 **[Polkadot Wiki](#)**, this site documents the behavior and mechanism of Polkadot network, such as its governance mechanism, how transaction fee is calculated, and a section on parachains, etc. Polkadot network is built using Substrate with a lot of additional custom modules to constitute the current sophisticated behavior.
 
