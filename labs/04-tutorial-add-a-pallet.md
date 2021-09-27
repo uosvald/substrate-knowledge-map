@@ -2,7 +2,7 @@
 
 ## Task
 
-Complete the [Add a Pallet](https://substrate.dev/docs/en/tutorials/add-a-pallet/) tutorial. This tutorial goes through how to configure a Substrate runtime to use a pallet.
+Complete the [Add a Pallet](https://docs.substrate.io/tutorials/v3/add-a-pallet) tutorial. This tutorial goes through how to configure a Substrate runtime to use a pallet.
 
 ## Submission Instructions
 

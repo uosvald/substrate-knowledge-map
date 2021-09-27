@@ -12,7 +12,7 @@ Read through the task and submit your lab results as per the instructions under 
 
 ## Task
 
-Complete parts I - II of [the Kitties tutorial](https://substrate.dev/substrate-how-to-guides/docs/tutorials/Kitties/overview).
+Complete parts I - II of [the Kitties tutorial](https://docs.substrate.io/tutorials/v3/kitties/pt1).
 
 ## Submission Instructions
 

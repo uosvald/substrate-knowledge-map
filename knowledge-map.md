@@ -3,11 +3,12 @@
 - [Substrate Knowledge Map for Hackathon Participants](#substrate-knowledge-map-for-hackathon-participants)
   - [Introduction](#introduction)
     - [Smart contract development](#smart-contract-development)
-    - [Substrate runtime development](#Substrate-runtime-development)
-    - [Navigating the documentations](#navigating-our-documentations)
+    - [Substrate runtime development](#substrate-runtime-development)
+  - [Navigating the documentation](#navigating-the-documentation)
+  - [Additional resources](#additional-resources)
     - [Quiz #1](#quiz-1)
   - [Basics](#basics)
-    - [Set up your local development environment](#setup-your-local-development-environment)
+    - [Set up your local development environment](#set-up-your-local-development-environment)
     - [Lab #1](#lab-1)
     - [Interact with a Substrate network using Polkadot-JS apps](#interact-with-a-substrate-network-using-polkadot-js-apps)
     - [Quiz #2](#quiz-2)
@@ -15,9 +16,9 @@
     - [Lab #3](#lab-3)
   - [Preliminaries](#preliminaries)
     - [Rust](#rust)
-    - [How blockchains work](#how-blockchain-works)
+    - [How blockchains work](#how-blockchains-work)
     - [Quiz #3](#quiz-3)
-  - [Substrate runtime development](#substrate-runtime-development)
+  - [Substrate runtime development](#substrate-runtime-development-1)
     - [High level architecture](#high-level-architecture)
     - [Quiz #4](#quiz-4)
     - [Runtime development topics](#runtime-development-topics)
@@ -28,11 +29,11 @@
   - [Polkadot JS API](#polkadot-js-api)
     - [Lab #7](#lab-7)
     - [Quiz #6](#quiz-6)
-  - [Smart contract](#smart-contract)
-    - [Using **ink!**](#using-ink)
+  - [Smart contracts](#smart-contracts)
     - [Quiz #7](#quiz-7)
   - [What we do not cover](#what-we-do-not-cover)
   - [Terms clarification](#terms-clarification)
+  - [Others](#others)
 
 <!-- /MarkdownTOC -->
 
@@ -112,7 +113,7 @@ In summary, runtime development:
 - Provides flexibility to customize full-stack application logic.
 
 > To learn more about using smart contracts within Substrate, refer to the
-> [**Smart Contract - Overview**](https://substrate.dev/docs/en/knowledgebase/smart-contracts/overview)
+> [**Smart Contract - Overview**](https://docs.substrate.io/docs/v3/smart-contracts/overview)
 > page as well as the
 > [Polkadot Builders Guide](https://wiki.polkadot.network/docs/build-build-with-polkadot#what-is-the-difference-between-building-a-parachain-a-parathread-or-a-smart-contract).
 
@@ -128,19 +129,18 @@ Alternatively, also look for support on [Stackoverflow where questions are tagge
 
 Use the following links to explore the sites and resources available on each:
 
-[**Substrate Developer Hub**](https://substrate.dev/) has the most comprehensive
+[**Substrate Developer Hub**](https://docs.substrate.io/) has the most comprehensive
 all-round coverage about Substrate, from a "big picture" explanation of architecture to specific technical concepts. 
 The site also provides tutorials to guide you as your learn the Substrate framework and the API reference documentation. You should check this site first if you want to look up information about Substrate runtime development. 
 The site consists of:
 
-- [Knowledge Base](https://substrate.dev/docs/en/): Explaining the foundational concepts of building blockchain runtimes using Substrate.
+- [Knowledge Base](https://docs.substrate.io/docs/v3): Explaining the foundational concepts of building blockchain runtimes using Substrate.
 
-- [Tutorials](https://substrate.dev/en/tutorials): Hand-on tutorials for developers to follow.
+- [Tutorials](https://docs.substrate.io/tutorials/v3): Hand-on tutorials for developers to follow.
   **The first SIX tutorials show the fundamentals in Substrate and are recommended for
   every Substrate learner to go through.**
 
-- [How-to Guides](https://substrate.dev/substrate-how-to-guides/) /
-  [Recipes](https://substrate.dev/recipes): These resources are like the O'Reilly cookbook series written in a task-oriented way for readers to get the job done. 
+- [How-to Guides](https://docs.substrate.io/how-to-guides/v3): These resources are like the O'Reilly cookbook series written in a task-oriented way for readers to get the job done.
   Some examples of the topics overed include:
   
     - Setting up proper weight functions for extrinsic calls.
@@ -148,9 +148,7 @@ The site consists of:
     - Writing tests for your pallets
     It can also be read from
   
-    Note that we are migrating content to convert all existing [Recipes](https://substrate.dev/recipes) to become [How-to Guides](https://substrate.dev/substrate-how-to-guides/).
-
-- [API docs](https://substrate.dev/rustdocs): Substrate API reference documentation.
+- [API docs](https://docs.substrate.io/rustdocs): Substrate API reference documentation.
 
 [Substrate Node Template](https://github.com/substrate-developer-hub/substrate-node-template) provides a light weight, minimal Substrate blockchain node that you can set up as a local development environment.
 
@@ -185,8 +183,8 @@ Both stable and nightly versions are required because currently a Substrate runt
 
 Also refer to:
 
-- [Set up Substrate for Unix-based machines](https://substrate.dev/docs/en/knowledgebase/getting-started/)
-- [Set up Substrate for Windows](https://substrate.dev/docs/en/knowledgebase/getting-started/windows-users)
+- [Set up Substrate for Unix-based machines](https://docs.substrate.io/docs/v3/getting-started/installation)
+- [Set up Substrate for Windows](https://docs.substrate.io/docs/v3/getting-started/windows-users)
 
 ### Lab #1
 
@@ -275,11 +273,11 @@ The lectures we recommend you watch are: lectures 1 - 7 and lecture 10. That's 8
 ### High level architecture
 
 To know more about the high level architecture of Substrate, please go through the Knowledge Base articles on
-**[Getting Started: Overview](https://substrate.dev/docs/en/)** and
-**[Getting Started: Architecture](https://substrate.dev/docs/en/knowledgebase/getting-started/architecture)**.
+**[Getting Started: Overview](https://docs.substrate.io/docs/v3/getting-started/overview)** and
+**[Getting Started: Architecture](https://docs.substrate.io/docs/v3/getting-started/architecture)**.
 
 In this document, we assume you will develop a Substrate runtime with
-[FRAME](https://substrate.dev/docs/en/knowledgebase/runtime/frame) (v2). This is what a Substrate
+[FRAME](https://docs.substrate.io/docs/v3/runtime/frame) (v2). This is what a Substrate
 node consists of.
 
 ![assets/03-substrate-architecture.png](./assets/03-substrate-architecture.png)
@@ -289,7 +287,7 @@ P2P network, reaching consensus on the state of the blockchain, and the chain's 
 (aka the blockchain runtime). Each aspect of the node is interesting in its own right, and the
 runtime is particularly interesting because it contains the business logic (aka "state transition
 function") that codifies the chain's functionality. The runtime contains a collection of 
-[pallets](https://substrate.dev/docs/en/knowledgebase/runtime/pallets) that are configured to work together.
+[pallets](https://docs.substrate.io/docs/v3/runtime/pallets) that are configured to work together.
 
 On the node level, Substrate leverages [libp2p](https://libp2p.io/) for the p2p networking layer and 
 puts the transaction pool, consensus mechanism, and underlying data storage (a key-value database) on
@@ -302,24 +300,24 @@ cover them in detail except for mentioning their existence.
 
 ### Runtime development topics
 
-In our [Developer Hub](https://substrate.dev/), we have a thorough coverage on various
+In our [Developer Hub](https://docs.substrate.io/), we have a thorough coverage on various
 subjects you need to know to develop with Substrate. So here we just list out the key topics and
 reference back to Developer Hub. Please go through the following key concepts and the directed
 resources to know the fundamentals of runtime development.
 
-- [**Key Concept: Runtime**](https://substrate.dev/docs/en/knowledgebase/runtime/), this is where
+- [**Key Concept: Runtime**](https://docs.substrate.io/docs/v3/concepts/runtime), this is where
   the blockchain state transition function (the blockchain application-specific logic) is defined.
   It is about composing multiple pallets (can be understood as Rust modules) together in the runtime
   and hooking them up together.
 
-- [**Runtime Development: Execution**](https://substrate.dev/docs/en/knowledgebase/runtime/execution),
+- [**Runtime Development: Execution**](https://docs.substrate.io/docs/v3/runtime/execution),
   this article describes how a block is produced, and how transactions are selected and executed
   to reach the next "stage" in the blockchain.
 
-- [**Runtime Develpment: Pallets**](https://substrate.dev/docs/en/knowledgebase/runtime/pallets),
+- [**Runtime Develpment: Pallets**](https://docs.substrate.io/docs/v3/runtime/pallets),
   this article describes what the basic structure of a Substrate pallet is consists of.
 
-- [**Runtime Development: FRAME**](https://substrate.dev/docs/en/knowledgebase/runtime/frame),
+- [**Runtime Development: FRAME**](https://docs.substrate.io/docs/v3/runtime/frame),
   this article gives a high level overview of the system pallets Substrate already
   implements to help you quickly develop as a runtime engineer. Have a quick skim so you have a basic idea of the
   different pallets Substrate is made of.
@@ -328,25 +326,25 @@ resources to know the fundamentals of runtime development.
 
 👉 **Complete [Lab #4: Adding a Pallet into a Runtime](labs/04-tutorial-add-a-pallet.md)**
 
-- [**Runtime Development: Storage**](https://substrate.dev/docs/en/knowledgebase/runtime/storage),
+- [**Runtime Development: Storage**](https://docs.substrate.io/docs/v3/runtime/storage),
   this article describes how data is stored on-chain and how you could access them.
 
-- [**Runtime Development: Events**](https://substrate.dev/docs/en/knowledgebase/runtime/events) &
-  [**Errors**](https://substrate.dev/docs/en/knowledgebase/runtime/errors), these two pages
+- [**Runtime Development: Events**](https://docs.substrate.io/docs/v3/runtime/events) &
+  [**Errors**](https://docs.substrate.io/docs/v3/runtime/errors), these two pages
   describe how external parties know what has happened in the blockchain, via the emitted events
   and errors when executing transactions.
 
 > **Notes**: All of the above concepts we leverage on the `#[pallet::*]` macro to define them in the
 > code. If you are interested to learn more about what other types of pallet macros exist
-> go to [the FRAME macro API documentation](https://substrate.dev/rustdocs/latest/frame_support/attr.pallet.html)
+> go to [the FRAME macro API documentation](https://paritytech.github.io/substrate/latest/frame_support/attr.pallet.html)
 > and
-> [this doc on some frequently used Substrate macros](https://substrate.dev/docs/en/knowledgebase/runtime/macros).
+> [this doc on some frequently used Substrate macros](https://docs.substrate.io/docs/v3/runtime/macros).
 
 ### Lab #5
 
 👉 **Complete [Lab #5: Building a Proof-of-Existence dApp](labs/05-poe.md)**
 
-- [Writing Tests for Your Pallet](https://substrate.dev/docs/en/knowledgebase/runtime/tests):
+- [Writing Tests for Your Pallet](https://docs.substrate.io/docs/v3/runtime/testing):
   learn to build up a mock runtime and write test cases for your pallet logics.
 
 ### Lab #6
@@ -363,10 +361,9 @@ resources to know the fundamentals of runtime development.
 build a javascript front end or utility and interact with any Substrate-based blockchain.
 
 The [Substrate Front-end Template](https://github.com/substrate-developer-hub/substrate-front-end-template)
-is an example of using Polkadot JS API in a React front-end (a
-[hosted version here](https://substrate.dev/substrate-front-end-template/)).
+is an example of using Polkadot JS API in a React front-end.
 
-- [Runtime Development: Metadata](https://substrate.dev/docs/en/knowledgebase/runtime/metadata),
+- [Runtime Development: Metadata](https://docs.substrate.io/docs/v3/runtime/metadata),
   this article describes the API allowing external parties to query what API is
   open for the chain. Polkadot JS API makes use of a chain's metadata to know what queries and
   functions are available from a chain to call.
@@ -382,14 +379,14 @@ is an example of using Polkadot JS API in a React front-end (a
 ## Smart contracts
 
 Learn about the difference between smart contract development vs Substrate runtime development, and
-when to use each [here](https://substrate.dev/docs/en/knowledgebase/smart-contracts).
+when to use each [here](https://docs.substrate.io/docs/v3/smart-contracts/overview#smart-contracts-vs-runtime-development).
 
-In Substrate, you can program smart contracts using [ink!](https://paritytech.github.io/ink-docs/).
+In Substrate, you can program smart contracts using [ink!](https://paritytech.github.io/ink-docs).
 
 - Learn about
-  [smart contract development in Substrate](https://substrate.dev/docs/en/knowledgebase/smart-contracts/)
+  [smart contract development in Substrate](https://docs.substrate.io/docs/v3/smart-contracts/overview)
 - Learn about
-  [Smart contract development using ink!](https://substrate.dev/docs/en/knowledgebase/smart-contracts/contracts-pallet)
+  [Smart contract development using ink!](https://docs.substrate.io/docs/v3/smart-contracts/contracts-pallet)
 
 ### Quiz #7
 
@@ -400,31 +397,26 @@ In Substrate, you can program smart contracts using [ink!](https://paritytech.gi
 A lot 😄
 
 - On-chain runtime upgrades. We have a tutorial on
-  [On-chain (forkless) Runtime Upgrade](https://substrate.dev/docs/en/tutorials/forkless-upgrade/).
+  [On-chain (forkless) Runtime Upgrade](https://docs.substrate.io/docs/v3/runtime/upgrades).
   This tutorial introduces how to perform and schedule a runtime upgrade as an on-chain
   transaction.
 
-- About [transaction weight](https://substrate.dev/docs/en/knowledgebase/learn-substrate/weight),
-  [fee](https://substrate.dev/docs/en/knowledgebase/runtime/fees), and
-  [benchmarking your runtime to determine the proper transaction cost](https://substrate.dev/docs/en/knowledgebase/runtime/benchmarking).
+- About [transaction weight and fee](https://docs.substrate.io/docs/v3/runtime/weights-and-fees), and
+  [benchmarking your runtime to determine the proper transaction cost](https://docs.substrate.io/docs/v3/runtime/benchmarking).
 
-- [Off-chain Features](https://substrate.dev/docs/en/knowledgebase/learn-substrate/off-chain-features)
+- [Off-chain Features](https://docs.substrate.io/docs/v3/concepts/off-chain-features)
 
   There are certain limits to on-chain logic. For instance, computation cannot be too
   intensive that it affects the block output time, and computation must be deterministic. This
   means that computation that relies on external data fetching cannot be done on-chain. In Substrate,
   developers can run these types of computation off-chain and have the result sent back on-chain via
-  extrinsics. These following articles are practical guides to understanding these concepts:
+  extrinsics.
 
-  - [Recipes: Submit signed and unsigned transactions from off-chain workers back on-chain](https://substrate.dev/recipes/off-chain-workers/transactions.html)
-  - [Recipes: Fetch external data using HTTP requests and parse JSON responses](https://substrate.dev/recipes/off-chain-workers/http-json.html)
-  - [Recipes: Store result in off-chain worker local storage](https://substrate.dev/recipes/off-chain-workers/storage.html)
-
-- [Tightly- and Loosely-coupled pallets](https://substrate.dev/recipes/pallet-coupling.html),
+- [Tightly- and Loosely-coupled pallets](https://docs.substrate.io/v3/runtime/pallet-coupling),
   calling one pallet's functions from another pallet via trait specification.
 
 - [Blockchain Consensus Mechansim](https://wiki.polkadot.network/docs/en/learn-consensus), and a
-  guide on customizing it to proof-of-work [here](https://substrate.dev/recipes/basic-pow.html).
+  guide on customizing it to proof-of-work [here](https://docs.substrate.io/how-to-guides/v3/consensus/pow).
 
 - [Parachains](https://wiki.polkadot.network/docs/en/learn-parachains): one key feature of
   Substrate is the capability of becoming a parachain for relay chains like Polkadot. You can develop your own
@@ -434,7 +426,7 @@ A lot 😄
 
   - [Cross-chain Message Passing (XCMP)](https://wiki.polkadot.network/docs/en/learn-crosschain),
     how parachain and relay-chain communicate to each others
-  - [Workshop: Using cumulus to build your parachain](https://substrate.dev/cumulus-workshop)
+  - [Workshop: Using cumulus to build your parachain](https://docs.substrate.io/tutorials/v3/cumulus-workshop)
 
 ## Terms clarification
 
