@@ -449,3 +449,7 @@ A lot 😄
   permissionless network when apps are not controlled by a centralized entity.
 - **Web3 Foundation**: A foundation setup to support the development of decentralized web software
   protocols. Learn more about what they do [on thier website](https://web3.foundation/about/).
+
+## Others
+
+- [Answers to quizzes and labs](https://github.com/substrate-developer-hub/hackathon-knowledge-map-ans)
