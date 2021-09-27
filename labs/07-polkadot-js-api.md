@@ -21,4 +21,8 @@ yarn start
 
 ## Submission Instructions
 
-Put the answer (updated script) in `/your-lab-ans/07`. Commit the code and push to the remote repository.
+Put the answer (updated script) in `/your-lab-ans/07`. Commit the code and push to the remote repository. Please submit:
+
+1. The link to your repository at the branch and directory level for this lab.
+
+2. Screenshots of showing the result of running the script. The output maybe longer than one screen. Please capture all of them and name them as `01.png`, `02.png`, etc.
