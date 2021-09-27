@@ -2,19 +2,24 @@
 
 ## Overview
 
-This lab combines the knowledge you've acquired by completing the readings and all the [Substrate Runtime Development Topics](../README.md#runtime-development-topics). By completing this lab, you will get hands-on experience on building a decentralized application that manages the creation and ownership transfers of digital kitties.
+This lab combines the knowledge you've acquired by completing the readings and all the
+[Substrate Runtime Development Topics](../README.md#runtime-development-topics). By completing
+this lab, you will get hands-on experience on building a decentralized application that manages
+the creation and ownership transfers of digital kitties.
 
-Read through the task and submit your lab results as per the instructions under the [Submission Instructions](#submission-instructions) instructions.
+Read through the task and submit your lab results as per the instructions under the
+[Submission Instructions](#submission-instructions) instructions.
 
 ## Task
 
-Complete parts I - IV of [the Kitties tutorial](https://substrate.dev/substrate-how-to-guides/docs/tutorials/Kitties/overview).
+Complete parts I - II of [the Kitties tutorial](https://substrate.dev/substrate-how-to-guides/docs/tutorials/Kitties/overview).
 
 ## Submission Instructions
-Run your Kitties node and use Polkadot JS Apps to submit the following screenshots:
 
-- A screenshot of `create_kitties` extrinsic, after creating 2 kitties.
-- A screenshot of sucessful `transfer` event.
-- A screenshot of `set_price` in chain state for 1 kitty.
+1. There should be two sub-directories in the submitted directory. One is the Substrate Node, and
+another one is the customized Front-end Template. Please submit the link to the github repo at the
+directory level with Substrate Node and Front-end Template.
 
-Put all three screenshots inside the `your-labs-ans/06/` folder.
+2. On the customized front-end template, create 3 kitties using Alice account. Then transfer one
+kitty to Bob, and make a screenshot. In the screenshot please include the emitted event of
+`KittyTransferred` in **Events** section.
